@@ -1,0 +1,772 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "JetBrains Mono", monospace;
+    color: #ccc;
+    /*background: rgb(197, 93, 249);*/
+    /*background: linear-gradient(0deg, rgba(197, 93, 249, 1) 0%, rgba(255, 81, 227, 1) 48%, rgba(255, 98, 98, 1) 100%);*/
+    background: url("../img/Mera-Dabba.jpg");
+    background-size: cover;
+    font-size: 18px;
+}
+Form{
+    border-radius: 16px;
+}
+
+.content {
+    position: fixed;
+    flex-direction: column;
+    /* background-color:; */
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.ParentContainer{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.Nav {
+    height: 100%;
+    width: 8%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    background-image: url("../img/Abs.png") ;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.navLinkTitle {
+    color: rgb(13, 14, 13);
+    margin-bottom: 20px;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navLinksCnt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+
+.navLinkCnt {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.navLinkCnt a {
+    text-decoration: none;
+    color: black;
+}
+
+.navLinkCnt a:hover {
+    color: rgb(46, 4, 231);
+}
+
+.MyTable {
+    display: block;
+}
+
+.MyRow {
+    display: flex;
+    background-color: #040404;
+    border: #131313 solid 2px;
+    border-radius: 20px;
+    margin: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+
+
+.MyRow button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 9px;
+}
+
+.MyRowElement {
+    padding: 12px;
+    border-radius: 20px;
+    border: #919288 solid 2px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.MyRowElementDesc {
+    padding: 12px;
+    border-radius: 20px;
+    color: chartreuse;
+    border: chartreuse solid 2px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.MyRowElementBtn {
+    padding: 8px;
+}
+
+
+/*Button*/
+.ButtonContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Quantity {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gold;
+}
+
+input {
+    width: 100%;
+    height: 2em;
+}
+
+.BtnItem {
+    background-color: inherit;
+    color: gold;
+    border: gold solid 2px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.ItemQty {
+    padding: 8px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: whitesmoke solid 2px;
+    background-color: crimson;
+    color: white;
+}
+
+.BtnBlue {
+    background-color: inherit;
+    color: aqua;
+    border: aqua solid 2px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.BtnRed {
+    background: red;
+    color: #131313;
+    width: 5em;
+    height: 3em;
+}
+
+.BtnCheckout {
+    width: 12em;
+    height: 3em;
+    background: gold;
+    color: #131313;
+}
+
+.BtnPay {
+    width: 6em;
+    height: 3em;
+    background-color: inherit;
+    color: chartreuse;
+    border: chartreuse solid 2px;
+    border-radius: 20px;
+}
+
+.BtnCancel {
+    width: 6em;
+    height: 3em;
+    background-color: inherit;
+    color: red;
+    border: red solid 2px;
+    border-radius: 20px;
+}
+
+.BtnPickUp {
+    width: 6em;
+    height: 3em;
+    background-color: inherit;
+    color: dodgerblue;
+    border: dodgerblue solid 2px;
+    border-radius: 20px;
+}
+
+.BtnPickUpAlt {
+    width: 6em;
+    height: 3em;
+    background-color: dodgerblue;
+    color: black;
+    border: dodgerblue solid 2px;
+    border-radius: 20px;
+}
+
+.BtnDeliver {
+    width: 6em;
+    height: 3em;
+    background-color: inherit;
+    color: orange;
+    border: orange solid 2px;
+    border-radius: 20px;
+}
+
+.BtnDeliverAlt {
+    width: 6em;
+    height: 3em;
+    background-color: orange;
+    color: black;
+    border: orange solid 2px;
+    border-radius: 20px;
+}
+
+.btnSmall {
+    width: 50px;
+    height: 50px;
+    background: crimson;
+    margin: 2px;
+    color: white;
+    border: darkred solid 2px;
+    border-radius: 30px;
+    float: right;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #131313;
+    padding: 50px;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .25);
+}
+
+.InfoTitle {
+    padding: 12px;
+    border-radius: 20px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    color: mediumorchid;
+}
+
+.ModalElementValAddress {
+    padding: 12px;
+    border-radius: 20px;
+    color: aqua;
+    border: aqua solid 2px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.ModalElementValUser {
+    padding: 12px;
+    border-radius: 20px;
+    color: whitesmoke;
+    border: whitesmoke solid 2px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.InfoContainer {
+    padding: 12px;
+    border-radius: 20px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.HomeContainer {
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.NewHome {
+    color: #ff4444;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 30px;
+    border-radius: 16px;
+    margin-right: 20px;
+    height: fit-content;
+    align-self: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.HomeRow {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ImageContainer {
+    width: inherit;
+    height: 200px;
+    padding: 20px;
+}
+
+.HomeImageContainer {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ImageNoodle {
+    width: inherit;
+    height: inherit;
+    fill: coral;
+    animation: flickerNoodle 4s linear infinite;
+}
+
+@keyframes flickerNoodle {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 coral, 1px -1px 0 coral, -1px 1px 0 coral, 1px 1px 0 coral, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImagePizza {
+    width: inherit;
+    height: inherit;
+    fill: orangered;
+    animation: flickerPizza 2s linear infinite;
+}
+
+@keyframes flickerPizza {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 orangered, 1px -1px 0 orangered, -1px 1px 0 orangered, 1px 1px 0 orangered, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageIceCream {
+    width: inherit;
+    height: inherit;
+    fill: hotpink;
+    animation: flickerIceCream 4s linear infinite;
+}
+
+@keyframes flickerIceCream {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 hotpink, 1px -1px 0 hotpink, -1px 1px 0 hotpink, 1px 1px 0 hotpink, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageOnigiri {
+    width: inherit;
+    height: inherit;
+    fill: greenyellow;
+    animation: flickerOnigiri 3s linear infinite;
+}
+
+@keyframes flickerOnigiri {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 greenyellow, 1px -1px 0 greenyellow, -1px 1px 0 greenyellow, 1px 1px 0 greenyellow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageKebab {
+    width: inherit;
+    height: inherit;
+    fill: dodgerblue;
+    animation: flickerOnigiri 2s linear infinite;
+}
+
+@keyframes flickerOnigiri {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 dodgerblue, 1px -1px 0 dodgerblue, -1px 1px 0 dodgerblue, 1px 1px 0 dodgerblue, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageDonut {
+    width: inherit;
+    height: inherit;
+    fill: gold;
+    animation: flickerDonut 4s linear infinite;
+}
+
+@keyframes flickerDonut {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImagePopsicle {
+    width: inherit;
+    height: inherit;
+    fill: cyan;
+    animation: flickerPopsicle 3s linear infinite;
+}
+
+@keyframes flickerPopsicle {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 cyan, 1px -1px 0 cyan, -1px 1px 0 cyan, 1px 1px 0 cyan, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImagePancake {
+    width: inherit;
+    height: inherit;
+    fill: teal;
+    animation: flickerPancake 5s linear infinite;
+}
+
+@keyframes flickerPancake {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 teal, 1px -1px 0 teal, -1px 1px 0 teal, 1px 1px 0 teal, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageSandwich {
+    width: inherit;
+    height: inherit;
+    fill: forestgreen;
+    animation: flickerSandwich 3s linear infinite;
+}
+
+@keyframes flickerSandwich {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 forestgreen, 1px -1px 0 forestgreen, -1px 1px 0 forestgreen, 1px 1px 0 forestgreen, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.ImageHotdog {
+    width: inherit;
+    height: inherit;
+    fill: darkorchid;
+    animation: flickerHotdog 4s linear infinite;
+}
+
+@keyframes flickerHotdog {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 darkorchid, 1px -1px 0 darkorchid, -1px 1px 0 darkorchid, 1px 1px 0 darkorchid, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.HomeRow {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.HomePageTitleText {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+    color: orange;
+}
+
+.FormContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(50%,0%)
+}
+
+.PageHeading {
+    text-align: center;
+}
+
+Form {
+    padding: 40px;
+    background-color: #131313;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.LeftContainer {
+    color: #ff4444;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 30px;
+    border-radius: 16px;
+    margin-right: 20px;
+    height: fit-content;
+    align-self: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.TableContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 30px;
+    border-radius: 16px;
+    margin-right: 20px;
+    height: fit-content;
+    align-self: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.LeftContainer  button{
+    margin: 10px;
+}
+.LeftUpper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LeftLower {
+    width: 100%;
+    height: 100%;
+    border: #ff4444 solid 2px;
+}
+.RightContainer {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfd5d5;
+    border-radius: 16px;
+    padding: 30px;
+    align-self: center;
+    color: cyan;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.RightContainer1 {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    border-radius: 16px;
+    padding: 30px;
+    align-self: center;
+    color: #ff4444;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.RightContainer2 {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    border-radius: 16px;
+    padding: 30px;
+    align-self: center;
+    color: #ff4444;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.RightUpper {
+    width: 100%;
+    height: 100%;
+}
+
+.RightLower {
+    width: 100%;
+    height: 100%;
+}
+
+.DashColumn {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DashBlock {
+    color: darkorchid;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.DashBlock h2 {
+    color: gold;
+}
+
+.BalanceContainer {
+    height: 30px;
+    margin: 15px;
+    background-color: orange;
+    color: #131313;
+}
+.Balance{
+    height: 30px;
+    background-color: darkred;
+    color: #cccccc;
+}
+.WelcomeMsg{
+    position: relative;
+    align-self: center;
+    padding: 20px;
+    background-color: #131313;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+.WelcomeMsg h2{
+    color: orange;
+}
+.LoginSuccess{
+    background-color: inherit;
+    color: whitesmoke;
+    text-align: center;
+}
+.AboutContainer {
+    text-align: center;
+    width: 80%;
+    background-color: #131313;
+    height: fit-content;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+.AboutContainer > h1{
+    color: rebeccapurple;
+}
+.OrderStatus{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.OrderStatus button{
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.BtnCntr
+{
+    width: 100%;
+}
+.BtnCntr button{
+    width: 100%;
+}
+Table{
+    text-align: center;
+}
+Table th {
+    color: gold;
+}
+Table td {
+    color: orangered;
+}
+Table td{
+    border: #131313;
+}
+Table th{
+    border: #131313;
+}
+.RoleBadge button{
+    border-radius: 20px;
+}
